@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Soluciones Web | Inicio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <nav class="nav-bar">
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo">
+        </div>
+        <ul>
+            <li><a href="index.html" class="activo">Inicio</a></li>
+            <li><a href="about.html">Sobre Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <button id="darkModeToggle" title="Cambiar modo" style="background:transparent;border:none;font-size:1.7em;cursor:pointer;margin-left:12px;">
+            <span id="moonIcon" style="display:inline;">🌙</span>
+            <span id="sunIcon" style="display:none;">☀️</span>
+        </button>
+        <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+    </nav>
+    
+    <!-- HERO SIN BURBUJAS -->
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Transformá tu <span class="primary-color">presencia digital</span></h1>
+            <p class="section-subtitle">Desarrollamos soluciones web para empresas, emprendedores y proyectos que buscan destacar.</p>
+            <a href="contacto.html" class="btn-main">¡Quiero mi web!</a>
+        </div>
+    </section>
+    
+    <!-- Contador animado -->
+    <section class="counter-section">
+        <div class="counter-item">
+            <span class="counter" data-target="120">0</span>
+            <span class="counter-label">Proyectos entregados</span>
+        </div>
+        <div class="counter-item">
+            <span class="counter" data-target="98">0</span>
+            <span class="counter-label">Clientes satisfechos (%)</span>
+        </div>
+        <div class="counter-item">
+            <span class="counter" data-target="4">0</span>
+            <span class="counter-label">Años de experiencia</span>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section class="servicios-section">
+        <h2>Nuestros Servicios</h2>
+        <div class="servicios-grid">
+            <div class="servicio-card">
+                <img src="img/servicio1.png" alt="Diseño web">
+                <h3>Diseño Web</h3>
+                <p>Sitios modernos, responsivos y pensados para tu público objetivo.</p>
+            </div>
+            <div class="servicio-card">
+                <img src="img/servicio2.png" alt="Desarrollo a medida">
+                <h3>Desarrollo a Medida</h3>
+                <p>Soluciones personalizadas para empresas, tiendas, portfolios y más.</p>
+            </div>
+            <div class="servicio-card">
+                <img src="img/servicio3.png" alt="Soporte técnico">
+                <h3>Soporte Técnico</h3>
+                <p>Acompañamiento, actualización y optimización constante.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería de proyectos -->
+    <section class="galeria-section">
+        <h2>Galería de Proyectos</h2>
+        <div class="galeria-grid">
+            <div class="galeria-item">
+                <img src="img/proyecto1.jpg" alt="Proyecto 1">
+                <div class="galeria-info">
+                    <h4>Landing para Emprendimiento</h4>
+                    <span>Diseño / Estrategia</span>
+                </div>
+            </div>
+            <div class="galeria-item">
+                <img src="img/proyecto2.jpg" alt="Proyecto 2">
+                <div class="galeria-info">
+                    <h4>E-commerce</h4>
+                    <span>Desarrollo / Integración</span>
+                </div>
+            </div>
+            <div class="galeria-item">
+                <img src="img/proyecto3.jpg" alt="Proyecto 3">
+                <div class="galeria-info">
+                    <h4>Portfolio Profesional</h4>
+                    <span>Branding / Diseño</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="testimonios-section">
+        <h2>Testimonios</h2>
+        <div class="testimonios-carousel">
+            <button class="prev" aria-label="Anterior">&#10094;</button>
+            <div class="testimonio-card active">
+                <img src="img/testimonio1.jpg" alt="Cliente 1">
+                <p>"Gracias al equipo de Soluciones Web logré captar más clientes y mejorar mi imagen digital."</p>
+                <div class="autor">María González, Emprendedora</div>
+            </div>
+            <div class="testimonio-card">
+                <img src="img/testimonio2.jpg" alt="Cliente 2">
+                <p>"Muy buena atención y un trabajo profesional. Recomendados para negocios que recién empiezan."</p>
+                <div class="autor">Carlos Ramírez, Dueño de PyME</div>
+            </div>
+            <div class="testimonio-card">
+                <img src="img/testimonio3.jpg" alt="Cliente 3">
+                <p>"Tenía miedo de pasar mi local a la web y ahora vendo el doble gracias a ellos."</p>
+                <div class="autor">Ana Silva, Comercio familiar</div>
+            </div>
+            <button class="next" aria-label="Siguiente">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- Preguntas frecuentes -->
+    <section class="faq-section">
+        <h2>Preguntas Frecuentes</h2>
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-question">¿Qué necesito para tener mi página web?</button>
+                <div class="faq-answer">Solo tu idea, tus servicios y algunas imágenes o información básica. ¡Nosotros te guiamos en todo!</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">¿Cuánto tarda el desarrollo?</button>
+                <div class="faq-answer">Depende del proyecto, pero en promedio una web institucional puede estar lista en 1 a 3 semanas.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">¿Tendré soporte luego de publicada?</button>
+                <div class="faq-answer">¡Sí! Siempre podés contactarnos para mejoras, mantenimiento o cualquier consulta.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="img/logo.png" alt="Logo pie de página">
+                <span>Soluciones Web</span>
+            </div>
+            <div class="footer-links">
+                <a href="about.html">Nosotros</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="#">Instagram</a>
+            </div>
+            <div class="footer-copy">
+                <span>&copy; 2025 Soluciones Web</span>
+            </div>
+        </div>
+    </footer>
+    <!-- Botón scroll-to-top -->
+    <button id="scrollTopBtn" title="Volver arriba">&#8679;</button>
+    <script src="script.js"></script>
+</body>
+</html>

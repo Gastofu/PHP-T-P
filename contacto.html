@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto | Soluciones Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+    // Validación visual y feedback live
+    function validarFormulario() {
+        let nombre = document.getElementById('nombre').value.trim();
+        let email = document.getElementById('email').value.trim();
+        let telefono = document.getElementById('telefono').value.trim();
+        let asunto = document.getElementById('asunto').value;
+        let mensaje = document.getElementById('mensaje').value.trim();
+        let errores = [];
+        if (nombre.length < 3) errores.push("El nombre debe tener al menos 3 caracteres.");
+        if (!/^[\w\.-]+@\w+\.\w{2,}$/.test(email)) errores.push("El email no es válido.");
+        if (telefono.length < 7) errores.push("El teléfono debe tener al menos 7 caracteres.");
+        if (!asunto) errores.push("Selecciona un asunto.");
+        if (mensaje.length < 10) errores.push("El mensaje debe tener al menos 10 caracteres.");
+        if (errores.length > 0) {
+            alert("Corrige estos errores:\n\n" + errores.join("\n"));
+            return false;
+        }
+        return true;
+    }
+    </script>
+</head>
+<body>
+<header>
+    <nav class="nav-bar">
+        <img src="img/logo.png" alt="Logo Soluciones Web" class="logo">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="about.html">Sobre Nosotros</a></li>
+            <li><a href="contacto.html" class="activo">Contacto</a></li>
+        </ul>
+    </nav>
+    <nav class="nav-bar">
+    <!-- ...tu menú ... -->
+    <button id="darkModeToggle" title="Cambiar modo" style="background:transparent;border:none;font-size:1.7em;cursor:pointer;margin-left:12px;">
+        <span id="moonIcon" style="display:inline;">🌙</span>
+        <span id="sunIcon" style="display:none;">☀️</span>
+    </button>
+</nav>
+</header>
+<main>
+    <section class="hero-section" style="background-image: url('img/hero-bg.jpg'); min-height: 200px;">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Contactanos</h1>
+            <p class="section-subtitle">Dejanos tu mensaje y te respondemos a la brevedad.</p>
+        </div>
+    </section>
+    <section class="servicios-section" style="margin-top:2em;">
+        <h2>Formulario de contacto</h2>
+        <p class="section-subtitle">¡Escribinos! Te contestamos en el día</p>
+        <form action="procesar.php" method="get" onsubmit="return validarFormulario();" style="max-width: 450px; margin: auto; background:#fff; padding:2em 2.5em; border-radius:16px; box-shadow:0 2px 12px #25306e17;">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required style="width:100%;padding:.7em;margin-bottom:1em;border-radius:6px;border:1px solid #ccc;">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required style="width:100%;padding:.7em;margin-bottom:1em;border-radius:6px;border:1px solid #ccc;">
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required style="width:100%;padding:.7em;margin-bottom:1em;border-radius:6px;border:1px solid #ccc;">
+            <label for="empresa">Empresa (opcional):</label>
+            <input type="text" id="empresa" name="empresa" style="width:100%;padding:.7em;margin-bottom:1em;border-radius:6px;border:1px solid #ccc;">
+            <label for="asunto">Asunto:</label>
+            <select id="asunto" name="asunto" required style="width:100%;padding:.7em;margin-bottom:1em;border-radius:6px;border:1px solid #ccc;">
+                <option value="">Selecciona...</option>
+                <option value="Presupuesto">Presupuesto</option>
+                <option value="Soporte Técnico">Soporte Técnico</option>
+                <option value="Consultoría">Consultoría</option>
+                <option value="Otro">Otro</option>
+            </select>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required style="width:100%;padding:.7em;margin-bottom:1.3em;border-radius:6px;border:1px solid #ccc;min-height:80px;"></textarea>
+            <button type="submit" class="btn-main" style="width:100%;margin-top:1em;">Enviar mensaje</button>
+        </form>
+    </section>
+</main>
+<footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="img/logo.png" alt="Logo pie de página">
+            <span>Soluciones Web</span>
+        </div>
+        <div class="footer-links">
+            <a href="about.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="#">Instagram</a>
+        </div>
+        <div class="footer-copy">
+            <span>&copy; 2025 Soluciones Web</span>
+        </div>
+    </div>
+</footer>
+<!-- Botón scroll-to-top -->
+<button id="scrollTopBtn" title="Volver arriba">&#8679;</button>
+<script defer src="script.js"></script>
+</body>
+</html>

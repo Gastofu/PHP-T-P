@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sobre Nosotros | Soluciones Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav class="nav-bar">
+        <img src="img/logo.png" alt="Logo Soluciones Web" class="logo">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="about.html" class="activo">Sobre Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <nav class="nav-bar">
+    <!-- ...tu menú ... -->
+    <button id="darkModeToggle" title="Cambiar modo" style="background:transparent;border:none;font-size:1.7em;cursor:pointer;margin-left:12px;">
+        <span id="moonIcon" style="display:inline;">🌙</span>
+        <span id="sunIcon" style="display:none;">☀️</span>
+    </button>
+</nav>
+</header>
+<main>
+    <!-- HERO SOBRE NOSOTROS -->
+    <section class="hero-section" style="background-image: url('img/hero-bg.jpg'); min-height: 240px;">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Sobre <span class="primary-color">Nosotros</span></h1>
+            <p class="section-subtitle">Conocé nuestro propósito, valores y equipo.</p>
+        </div>
+    </section>
+
+    <section class="servicios-section" style="margin-top:2em;">
+        <h2>Nuestra Historia</h2>
+        <p class="section-subtitle">Pasión, tecnología y trabajo humano: así nació Soluciones Web</p>
+        <p style="max-width:700px;margin:auto;line-height:1.7;font-size:1.1em;">
+            Soluciones Web nació en 2021 con una misión clara: ayudar a emprendedores y empresas a crecer digitalmente.<br>
+            Nos especializamos en desarrollo web, diseño visual y soporte técnico integral.<br>
+            Ya son más de <b>120 proyectos entregados</b> y cientos de clientes satisfechos.<br>
+            Creemos en la innovación, el trato humano y la calidad en cada detalle.
+        </p>
+    </section>
+
+    <section class="galeria-section">
+        <h2>Nuestros Valores</h2>
+        <p class="section-subtitle">Nuestra filosofía en tres palabras</p>
+        <div class="servicios-grid">
+            <div class="servicio-card">
+                <img src="img/diseno.png" alt="Innovación">
+                <h3>Innovación</h3>
+                <p>Siempre al día con nuevas tecnologías y tendencias.</p>
+            </div>
+            <div class="servicio-card">
+                <img src="img/soporte.png" alt="Compromiso">
+                <h3>Compromiso</h3>
+                <p>Tu proyecto es tan importante para nosotros como para vos.</p>
+            </div>
+            <div class="servicio-card">
+                <img src="img/dev.png" alt="Transparencia">
+                <h3>Transparencia</h3>
+                <p>Te acompañamos con honestidad y claridad en todo momento.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonios-section" style="background:#fff;">
+        <h2>Equipo</h2>
+        <p class="section-subtitle">Personas reales detrás de cada proyecto</p>
+        <div class="servicios-grid">
+            <div class="servicio-card">
+                <img src="img/juan.jpg" alt="Juan Pérez" style="border-radius:50%;width:70px;">
+                <h3>Juan Pérez</h3>
+                <p>CEO & Desarrollador Fullstack</p>
+            </div>
+            <div class="servicio-card">
+                <img src="img/ana.jpg" alt="Ana García" style="border-radius:50%;width:70px;">
+                <h3>Ana García</h3>
+                <p>Diseñadora UX/UI</p>
+            </div>
+            <div class="servicio-card">
+                <img src="img/carlos.jpg" alt="Carlos López" style="border-radius:50%;width:70px;">
+                <h3>Carlos López</h3>
+                <p>Soporte Técnico Senior</p>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="img/logo.png" alt="Logo pie de página">
+            <span>Soluciones Web</span>
+        </div>
+        <div class="footer-links">
+            <a href="about.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="#">Instagram</a>
+        </div>
+        <div class="footer-copy">
+            <span>&copy; 2025 Soluciones Web</span>
+        </div>
+    </div>
+</footer>
+<!-- Botón scroll-to-top -->
+<button id="scrollTopBtn" title="Volver arriba">&#8679;</button>
+<script defer src="script.js"></script>
+</body>
+</html>
